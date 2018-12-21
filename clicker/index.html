@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Site</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script type="text/javascript">
+    var contt = 0;
+    function countt(st) {
+      contt++;
+      if (contt % 100 != 0)
+        st.innerHTML = 'CLICKS: ' + String(contt);
+      else st.innerHTML = 'CLICKS: ' + String(contt) + '<br>' + '<span id=\'c\'> WOW! </span>';
+    }
+  </script>
+</head>
+<body>
+  <div id="main">
+    <div id="elements"> 
+      <h2 id="logo">Clicker</h2>
+      <input type="button" name="b" value="CLICK" id="click" onclick="countt(document.getElementById('count'))">
+      <br>
+      <span id="count">CLICKS: 0</span>
+    </div>
+  </div> 
+</body>
+</html>
